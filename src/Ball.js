@@ -1,10 +1,10 @@
-import React, { Component } from 'react-native';
+import React, { Component } from 'react';
 import { View } from 'react-native';
 
 class Ball extends Component {
   render() {
     return (
-      <View style={styles.ball}/>
+      <View style={styles.ball} />
     );
   }
 }
@@ -15,6 +15,8 @@ const styles = {
     width: 60,
     borderRadius: 30, 
     borderWidth: 30,
-    borderColor: 'black';
+    borderColor: 'black'
   }
-}
+};
+
+export default Ball;
