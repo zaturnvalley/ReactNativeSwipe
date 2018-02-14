@@ -4,6 +4,7 @@
 * React Native
 * Expo
 * React Native Animations
+* React Native Elements
 
 ## Mockup:
 

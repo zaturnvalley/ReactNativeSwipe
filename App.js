@@ -4,6 +4,7 @@ import {
   View,
   Text 
 } from 'react-native';
+import { Card, Button } from 'react-native-elements';
 import Deck from './src/Deck';
 
 const DATA = [
