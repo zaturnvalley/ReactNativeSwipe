@@ -25,7 +25,7 @@ export default class App extends React.Component {
         title={item.text}
         image={{ uri: item.uri }}
       >
-        <Text style{{marginBottom: 10}}>
+        <Text style={{marginBottom: 10}}>
           Further Customization
         </Text>
         <Button
