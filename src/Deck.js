@@ -19,7 +19,7 @@ class Deck extends Component {
       onPanResponderRelease: () => {}
     });
 
-    this.state = { panResponder };
+    this.state = { panResponder, position };
   }
 
   renderCards() {
@@ -30,9 +30,12 @@ class Deck extends Component {
   
   render() {
     return (
-      <View {...this.state.panResponder.panHandlers}>
+      <Animated.View 
+        style={this.state.position.getLayout()}
+        {...this.state.panResponder.panHandlers}
+        >
         {this.renderCards()}
-      </View>
+      </Animated.View>
     );
   }
 }
