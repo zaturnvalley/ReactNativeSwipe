@@ -36,13 +36,15 @@ class Deck extends Component {
 
   forceSwipeRight() {
     Animated.timing(this.state.position, {
-      toValue: { x: SCREEN_WIDTH, y: 0}
+      toValue: { x: SCREEN_WIDTH, y: 0},
+      duration: 250
     }).start();
   }
 
   forceSwipeLeft() {
     Animated.timing(this.state.position, {
-      toValue: { x: -SCREEN_WIDTH, y: 0}
+      toValue: { x: -SCREEN_WIDTH, y: 0},
+      duration: 250
     }).start();
   }
 
