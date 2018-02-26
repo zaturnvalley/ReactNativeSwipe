@@ -38,6 +38,20 @@ export default class App extends React.Component {
     );
   }
 
+  renderNoMoreCards() {
+    return (
+      <Card title="All done!">
+        <Text style={{ marginBottom: 10}}>
+          No more content to show.
+        </Text>
+        <Button
+          backgroundColor="#03A9F4"
+          title="Get more"
+        />
+      </Card>
+    );
+  }
+
   render() {
     return (
       <View style={styles.container}>
