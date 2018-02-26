@@ -58,6 +58,7 @@ export default class App extends React.Component {
         <Deck 
           data={DATA} 
           renderCard={this.renderCard}
+          renderNoMoreCards={this.renderNoMoreCards}
         />
       </View>
     );
